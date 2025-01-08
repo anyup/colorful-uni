@@ -5,6 +5,15 @@ function sleep(delay) {
   }
 }
 
+let previous = 0;
+function throttle(func, wait = 500) {
+  let now = Date.now();
+  if (now - previous > wait) {
+    typeof func === "function" && func();
+    previous = now;
+  }
+}
+
 /**
  * 蓝牙工具类
  * @author qiaomingxing
@@ -100,9 +109,12 @@ class Bluetooth {
   onBluetoothDeviceFound(callback) {
     uni.onBluetoothDeviceFound(() => {
       // 获取在蓝牙模块生效期间所有已发现的蓝牙设备。包括已经和本机处于连接状态的设备。
-      this.getBluetoothDevices().then(res => {
-        callback && callback(res)
-      })
+      // 节流：否则影响性能
+      throttle(() => {
+        this.getBluetoothDevices().then(res => {
+          callback && callback(res)
+        })
+      }, 1000)
     })
   }
 

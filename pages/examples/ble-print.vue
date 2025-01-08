@@ -4,7 +4,7 @@
       <view class="is-flex is-align-center is-mgtb-10 is-text-left">
         <view class="is-flex-1"> 连接打印机：{{ connectedDevice && connectedDevice.name ? connectedDevice.name : '未连接' }} </view>
         <col-button v-if="connectedDevice" type="error" size="mini" @click="closeBLEConnection()">断开连接</col-button>
-        <col-button v-else type="primary" size="mini" :custom-style="{ 'margin-left': '20rpx' }" @click="checkAndRequestPermissions()"> 快速连接 </col-button>
+        <col-button v-else type="primary" size="mini" :custom-style="{ 'margin-left': '20rpx' }" @click="quickLink()"> 快速连接 </col-button>
       </view>
       <view class="is-mgt-20">
         <view>
@@ -69,8 +69,17 @@ export default {
     }, 500)
   },
   methods: {
-  // 检验是否有蓝牙权限
-  checkAndRequestPermissions() {
+    // 快速连接，区分Android和小程序
+    quickLink() {
+      // #ifdef APP-PLUS
+      this.quickInit()
+      // #endif
+      // #ifdef MP-WEIXIN
+      this.checkAndRequestPermissions()
+      // #endif
+    },
+    // 检验是否有蓝牙权限
+    checkAndRequestPermissions() {
       this.$tips.loading()
       const permissions = ['scope.bluetooth']
       // 检查权限
