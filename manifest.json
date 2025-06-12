@@ -182,6 +182,17 @@
             "treeShaking" : {
                 "enable" : true
             }
+        },
+        "devServer" : {
+            "https" : false,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api" : {
+                    "target" : "http://localhost:8080",
+                    "changeOrigin" : true,
+                    "secure" : false
+                }
+            }
         }
     },
     "fallbackLocale" : "zh-Hans"
