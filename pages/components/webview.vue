@@ -14,7 +14,7 @@ export default {
       this.src = options.src
     } else {
       // #ifdef H5
-      this.src = 'https://www.anyup.cn/site/index.html'
+      this.src = 'https://felabs.netlify.app/'
       // #endif
       // #ifdef MP-WEIXIN
       this.src = 'https://mp.weixin.qq.com/s/bgkhC02WPlEHmGnCbSmDcg'

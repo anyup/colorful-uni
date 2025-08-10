@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="logo" src="https://www.anyup.cn/static/anyup/images/logo-heart-transparent.png" width="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="https://ik.imagekit.io/anyup/images/social/site.png" width="120" style="margin-bottom: 10px;">
 </p>
 
 <h1 align="center">Colorful Uni App</h1>
@@ -7,7 +7,7 @@
 <p align="center">简洁、高效的前端工程化框架库</p>
 
 <p align="center">
-  🔥 <a href="https://www.anyup.cn/">在线文档网站</a>
+  🔥 <a href="https://felabs.netlify.app/zh/colorful-uni/guide/introduce.html">在线文档网站</a>
 </p>
 
 ### 介绍
@@ -88,7 +88,7 @@ $is-form-item-height: 70rpx;
 
 ```
 
-Colorful Uni 支持按需引用、单独引用等方式，详细说明见 [快速上手](https://www.anyup.cn/site/zh/colorful-uni/guide/quickstart.html).
+Colorful Uni 支持按需引用、单独引用等方式，详细说明见 [快速上手](https://felabs.netlify.app/zh/colorful-uni/guide/quickstart.html).
 
 ## 开源项目
 
@@ -115,10 +115,10 @@ Gitee 提 [Issue](https://gitee.com/anyup/colorful-uni/issues) ，也非常欢�
 
 <table class="table">
     <tr>
-        <td><img src="https://www.anyup.cn/static/anyup/images/qr_wx.png" width="150" height="150" ></td>
-	    <td><img src="https://www.anyup.cn/static/anyup/images/qr_wx_youti.jpg" width="150" height="150" ></td>
-	    <td><img src="https://www.anyup.cn/static/anyup/images/qr_h5.png" width="150" height="150" ></td>
-	    <td><img src="https://www.anyup.cn/static/anyup/images/qr_android.png" width="150" height="150" ></td>
+        <td><img src="https://ik.imagekit.io/anyup/images/social/qr_wx.png" width="150" height="150" ></td>
+	    <td><img src="https://ik.imagekit.io/anyup/images/social/qr_wx_youti.jpg" width="150" height="150" ></td>
+	    <td><img src="https://ik.imagekit.io/anyup/images/social/qr_h5.png" width="150" height="150" ></td>
+	    <td><img src="https://ik.imagekit.io/anyup/images/social/qr_android.png" width="150" height="150" ></td>
     </tr>
     <tr>
         <td align="center">示例小程序</td>
