@@ -59,23 +59,23 @@ export default {
 <style lang="scss">
 @import '@/uni_modules/colorful-uni/css/mixin.scss';
 
-.col-btn {
-  $type: darkblue gold;
-  $color: $u-type-gold, #ffffff;
-  $main: $u-type-darkblue, $u-type-gold;
-  $light: $u-type-darkblue-light, $u-type-gold-light;
-  $disabled: $u-type-darkblue-disabled, $u-type-gold-disabled;
-  $dark: $u-type-darkblue-dark, $u-type-gold-dark;
+// .col-btn {
+//   $type: darkblue gold;
+//   $color: $u-type-gold, #ffffff;
+//   $main: $u-type-darkblue, $u-type-gold;
+//   $light: $u-type-darkblue-light, $u-type-gold-light;
+//   $disabled: $u-type-darkblue-disabled, $u-type-gold-disabled;
+//   $dark: $u-type-darkblue-dark, $u-type-gold-dark;
 
-  @for $i from 1 through length($type) {
-    @include add-btn-theme(
-      nth($type, $i),
-      nth($color, $i),
-      nth($main, $i),
-      nth($light, $i),
-      nth($disabled, $i),
-      nth($dark, $i)
-    );
-  }
-}
+//   @for $i from 1 through length($type) {
+//     @include add-btn-theme(
+//       nth($type, $i),
+//       nth($color, $i),
+//       nth($main, $i),
+//       nth($light, $i),
+//       nth($disabled, $i),
+//       nth($dark, $i)
+//     );
+//   }
+// }
 </style>

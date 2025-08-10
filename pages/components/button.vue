@@ -25,7 +25,8 @@ export default {
           title: '类型: type',
           tips: '支持自定义type，详细见文档',
           layout: 'radio',
-          list: ['default', 'primary', 'warning', 'error', 'success', 'gold']
+          list: ['default', 'primary', 'warning', 'error', 'success']
+          // list: ['default', 'primary', 'warning', 'error', 'success', 'gold']
         },
         {
           type: 'size',
